@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Sora', system-ui, sans-serif;
+    color: #2f3436;
+    background-color: #ffffff;
+  }
+
+  body {
+    @apply text-text-main bg-bg-main antialiased selection:bg-primary/30 selection:text-text-main;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-medium rounded-pill px-6 py-3 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 text-center select-none cursor-pointer text-sm md:text-base;
+  }
+
+  .btn--primary {
+    @apply bg-primary text-text-main hover:bg-primary-hover active:scale-[0.98] shadow-sm font-semibold;
+  }
+
+  .btn--secondary {
+    @apply bg-white text-text-main border border-border-main hover:border-primary hover:bg-bg-alt active:scale-[0.98];
+  }
+
+  .card {
+    @apply bg-bg-card rounded-card border border-border-main p-6 lg:p-8 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-card;
+  }
+}
+
+/* Ocultar barra de scroll en scroll-snap horizontal manteniendo el desplazamiento */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
