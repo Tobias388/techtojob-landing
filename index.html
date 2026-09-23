@@ -125,7 +125,7 @@
 
     <!-- Mobile Nav Drawer -->
     <div id="mobile-menu"
-      class="hidden lg:hidden border-b border-border-main bg-white px-6 py-6 transition-all duration-300">
+      class="hidden lg:hidden border-b border-border-main bg-white px-6 py-6 transition-all duration-300 shadow-2xl rounded-b-2xl">
       <nav class="flex flex-col gap-4 text-base font-medium text-text-main" aria-label="Navegación móvil">
         <div class="flex items-center justify-between pb-3 border-b border-border-main">
           <span class="text-xs text-text-muted font-semibold uppercase">Idioma / Language</span>
@@ -161,6 +161,11 @@
       </nav>
     </div>
   </header>
+
+  <!-- Backdrop / Overlay para Menú Móvil -->
+  <div id="mobile-menu-backdrop"
+    class="fixed inset-0 bg-text-main/60 backdrop-blur-sm z-40 hidden lg:hidden transition-opacity duration-300"
+    aria-hidden="true"></div>
 
   <main id="main-content" class="w-full overflow-x-hidden">
     <!-- HERO SECTION -->
