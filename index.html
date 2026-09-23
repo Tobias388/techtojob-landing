@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechToJob — Conectá con empresas tech sin intermediarios ni filtros ATS</title>
-  <meta name="description" content="TechToJob es la comunidad donde desarrolladores y talento técnico se conectan directamente con líderes de empresas y participan en torneos de código.">
+  <meta name="description"
+    content="TechToJob es la comunidad donde desarrolladores y talento técnico se conectan directamente con líderes de empresas y participan en torneos de código.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#84c0bf">
 
@@ -18,7 +20,8 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://techtojob.com/">
   <meta property="og:title" content="TechToJob — Conectá con empresas tech sin intermediarios ni filtros ATS">
-  <meta property="og:description" content="TechToJob es la comunidad donde desarrolladores y talento técnico se conectan directamente con líderes de empresas y participan en torneos de código.">
+  <meta property="og:description"
+    content="TechToJob es la comunidad donde desarrolladores y talento técnico se conectan directamente con líderes de empresas y participan en torneos de código.">
   <meta property="og:site_name" content="TechToJob">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="TechToJob — Conectá con empresas tech sin intermediarios">
@@ -31,7 +34,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" media="print"
+    onload="this.media='all'">
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap">
   </noscript>
@@ -39,78 +43,118 @@
   <link rel="stylesheet" href="./src/main.css">
   <script type="module" src="./src/main.js" defer></script>
 </head>
-<body class="bg-bg-main text-text-main antialiased selection:bg-primary/30 selection:text-text-main flex flex-col min-h-screen">
 
-  <!-- Skip Link para Accesibilidad (A11y) [MEJ-02] -->
-  <a href="#main-content" data-i18n="common.skipLink" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-text-main focus:font-semibold focus:rounded-lg focus:shadow-md focus:outline-none focus:ring-2 focus:ring-text-main">
+<body
+  class="bg-bg-main text-text-main antialiased selection:bg-primary/30 selection:text-text-main flex flex-col min-h-screen overflow-x-hidden w-full">
+
+  <!-- Skip Link para Accesibilidad -->
+  <a href="#main-content" data-i18n="common.skipLink"
+    class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-text-main focus:font-semibold focus:rounded-lg focus:shadow-md focus:outline-none focus:ring-2 focus:ring-text-main">
     Saltar al contenido principal
   </a>
 
   <!-- HEADER -->
-  <header class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-border-main transition-all duration-200">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+  <header
+    class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-border-main transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
       <!-- Logo Principal: Mobile (Símbolo + Texto) | Desktop (Logo Horizontal v1Positivo) -->
-      <a href="./index.html" class="flex items-center gap-2.5 font-extrabold text-xl lg:text-2xl tracking-tight text-text-main focus-visible:ring-2 focus-visible:ring-primary rounded-lg" aria-label="TechToJob Inicio">
-        <img src="/logos/simbolo-degradado.svg" alt="TechToJob" width="34" height="34" class="h-8 w-8 sm:hidden flex-shrink-0">
+      <a href="./index.html"
+        class="flex items-center gap-2.5 font-extrabold text-xl lg:text-2xl tracking-tight text-text-main focus-visible:ring-2 focus-visible:ring-primary rounded-lg"
+        aria-label="TechToJob Inicio">
+        <img src="/logos/simbolo-degradado.svg" alt="TechToJob" width="34" height="34"
+          class="h-8 w-8 sm:hidden flex-shrink-0">
         <span class="sm:hidden" data-i18n="common.brandName">TechToJob</span>
-        <img src="/logos/v1-positivo.svg" alt="TechToJob" width="162" height="24" class="hidden sm:block h-7 lg:h-8 w-auto">
+        <img src="/logos/v1-positivo.svg" alt="TechToJob" width="162" height="24"
+          class="hidden sm:block h-7 lg:h-8 w-auto">
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-text-muted" aria-label="Navegación principal">
-        <a href="#como-funciona" data-i18n="nav.howItWorks" class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded px-1">¿Cómo funciona?</a>
-        <a href="#talento" data-i18n="nav.talent" class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded px-1">Talento</a>
-        <a href="#empresas" data-i18n="nav.companies" class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded px-1">Empresas</a>
-        <a href="#torneos" data-i18n="nav.tournaments" class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded px-1">Torneos</a>
-        <a href="#testimonios" data-i18n="nav.testimonials" class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded px-1">Testimonios</a>
-        <a href="#noticias" data-i18n="nav.news" class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded px-1">Noticias</a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-text-muted"
+        aria-label="Navegación principal">
+        <a href="#como-funciona" data-i18n="nav.howItWorks"
+          class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded px-1">¿Cómo
+          funciona?</a>
+        <a href="#talento" data-i18n="nav.talent"
+          class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded px-1">Talento</a>
+        <a href="#empresas" data-i18n="nav.companies"
+          class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded px-1">Empresas</a>
+        <a href="#torneos" data-i18n="nav.tournaments"
+          class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded px-1">Torneos</a>
+        <a href="#testimonios" data-i18n="nav.testimonials"
+          class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded px-1">Testimonios</a>
+        <a href="#noticias" data-i18n="nav.news"
+          class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded px-1">Noticias</a>
       </nav>
 
       <!-- Language Selector & Action Button -->
       <div class="hidden lg:flex items-center gap-4">
         <!-- Selector de Idioma (ES / EN) -->
-        <div class="inline-flex items-center bg-bg-alt border border-border-main rounded-full p-0.5 text-xs font-semibold" role="group" aria-label="Selector de idioma">
-          <button type="button" data-lang-btn="es" class="px-3 py-1.5 min-h-[38px] rounded-full bg-primary text-text-main font-bold transition-all cursor-pointer" aria-label="Cambiar idioma a español" aria-pressed="true">ES</button>
-          <button type="button" data-lang-btn="en" class="px-3 py-1.5 min-h-[38px] rounded-full text-text-muted hover:text-text-main transition-all cursor-pointer" aria-label="Switch language to English" aria-pressed="false">EN</button>
+        <div
+          class="inline-flex items-center bg-bg-alt border border-border-main rounded-full p-0.5 text-xs font-semibold"
+          role="group" aria-label="Selector de idioma">
+          <button type="button" data-lang-btn="es"
+            class="px-3 py-1.5 min-h-[38px] rounded-full bg-primary text-text-main font-bold transition-all cursor-pointer"
+            aria-label="Cambiar idioma a español" aria-pressed="true">ES</button>
+          <button type="button" data-lang-btn="en"
+            class="px-3 py-1.5 min-h-[38px] rounded-full text-text-muted hover:text-text-main transition-all cursor-pointer"
+            aria-label="Switch language to English" aria-pressed="false">EN</button>
         </div>
 
-        <a href="https://discord.gg/rY9hfDeqB" target="_blank" rel="noopener noreferrer" class="btn btn--primary text-sm py-2.5 px-5">
+        <a href="https://discord.gg/rY9hfDeqB" target="_blank" rel="noopener noreferrer"
+          class="btn btn--primary text-sm py-2.5 px-5">
           <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            <path
+              d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
           </svg>
           <span data-i18n="common.joinDiscord">Unirse al Discord</span>
         </a>
       </div>
 
       <!-- Mobile Hamburger Button -->
-      <button id="mobile-menu-btn" type="button" class="lg:hidden p-2 rounded-lg text-text-main hover:bg-bg-alt focus-visible:ring-2 focus-visible:ring-primary" aria-label="Abrir menú de navegación" aria-expanded="false">
+      <button id="mobile-menu-btn" type="button"
+        class="lg:hidden p-2 rounded-lg text-text-main hover:bg-bg-alt focus-visible:ring-2 focus-visible:ring-primary"
+        aria-label="Abrir menú de navegación" aria-expanded="false">
         <svg id="menu-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
         <svg id="menu-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
     </div>
 
     <!-- Mobile Nav Drawer -->
-    <div id="mobile-menu" class="hidden lg:hidden border-b border-border-main bg-white px-6 py-6 transition-all duration-300">
+    <div id="mobile-menu"
+      class="hidden lg:hidden border-b border-border-main bg-white px-6 py-6 transition-all duration-300">
       <nav class="flex flex-col gap-4 text-base font-medium text-text-main" aria-label="Navegación móvil">
         <div class="flex items-center justify-between pb-3 border-b border-border-main">
           <span class="text-xs text-text-muted font-semibold uppercase">Idioma / Language</span>
-          <div class="inline-flex items-center bg-bg-alt border border-border-main rounded-full p-0.5 text-xs font-semibold" role="group" aria-label="Selector de idioma en móvil">
-            <button type="button" data-lang-btn="es" class="px-4 py-2 min-h-[44px] rounded-full bg-primary text-text-main font-bold transition-all" aria-label="Cambiar idioma a español">ES</button>
-            <button type="button" data-lang-btn="en" class="px-4 py-2 min-h-[44px] rounded-full text-text-muted transition-all" aria-label="Switch language to English">EN</button>
+          <div
+            class="inline-flex items-center bg-bg-alt border border-border-main rounded-full p-0.5 text-xs font-semibold"
+            role="group" aria-label="Selector de idioma en móvil">
+            <button type="button" data-lang-btn="es"
+              class="px-4 py-2 min-h-[44px] rounded-full bg-primary text-text-main font-bold transition-all"
+              aria-label="Cambiar idioma a español">ES</button>
+            <button type="button" data-lang-btn="en"
+              class="px-4 py-2 min-h-[44px] rounded-full text-text-muted transition-all"
+              aria-label="Switch language to English">EN</button>
           </div>
         </div>
-        <a href="#como-funciona" data-i18n="nav.howItWorks" class="mobile-nav-link py-3 px-2 min-h-[48px] flex items-center hover:text-primary">¿Cómo funciona?</a>
-        <a href="#talento" data-i18n="nav.talent" class="mobile-nav-link py-3 px-2 min-h-[48px] flex items-center hover:text-primary">Talento</a>
-        <a href="#empresas" data-i18n="nav.companies" class="mobile-nav-link py-3 px-2 min-h-[48px] flex items-center hover:text-primary">Empresas</a>
-        <a href="#torneos" data-i18n="nav.tournaments" class="mobile-nav-link py-3 px-2 min-h-[48px] flex items-center hover:text-primary">Torneos</a>
-        <a href="#testimonios" data-i18n="nav.testimonials" class="mobile-nav-link py-3 px-2 min-h-[48px] flex items-center hover:text-primary">Testimonios</a>
-        <a href="#noticias" data-i18n="nav.news" class="mobile-nav-link py-3 px-2 min-h-[48px] flex items-center hover:text-primary">Noticias</a>
+        <a href="#como-funciona" data-i18n="nav.howItWorks"
+          class="mobile-nav-link py-3 px-2 min-h-[48px] flex items-center hover:text-primary">¿Cómo funciona?</a>
+        <a href="#talento" data-i18n="nav.talent"
+          class="mobile-nav-link py-3 px-2 min-h-[48px] flex items-center hover:text-primary">Talento</a>
+        <a href="#empresas" data-i18n="nav.companies"
+          class="mobile-nav-link py-3 px-2 min-h-[48px] flex items-center hover:text-primary">Empresas</a>
+        <a href="#torneos" data-i18n="nav.tournaments"
+          class="mobile-nav-link py-3 px-2 min-h-[48px] flex items-center hover:text-primary">Torneos</a>
+        <a href="#testimonios" data-i18n="nav.testimonials"
+          class="mobile-nav-link py-3 px-2 min-h-[48px] flex items-center hover:text-primary">Testimonios</a>
+        <a href="#noticias" data-i18n="nav.news"
+          class="mobile-nav-link py-3 px-2 min-h-[48px] flex items-center hover:text-primary">Noticias</a>
         <div class="pt-4 border-t border-border-main">
-          <a href="https://discord.gg/rY9hfDeqB" target="_blank" rel="noopener noreferrer" class="btn btn--primary w-full justify-center">
+          <a href="https://discord.gg/rY9hfDeqB" target="_blank" rel="noopener noreferrer"
+            class="btn btn--primary w-full justify-center">
             <span data-i18n="common.joinDiscord">Unirse al Discord</span>
           </a>
         </div>
@@ -118,55 +162,69 @@
     </div>
   </header>
 
-  <main id="main-content">
+  <main id="main-content" class="w-full overflow-x-hidden">
     <!-- HERO SECTION -->
-    <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 overflow-hidden">
-      <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+    <section class="relative pt-8 pb-16 lg:pt-20 lg:pb-32 overflow-hidden w-full">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-12 gap-8 lg:gap-8 items-center w-full min-w-0">
         <!-- Text Column -->
-        <div class="lg:col-span-7 flex flex-col items-start text-left">
+        <div class="lg:col-span-7 flex flex-col items-start text-left w-full min-w-0">
           <!-- Live Badge -->
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/15 border border-primary/30 text-text-main text-xs font-semibold tracking-wide uppercase mb-6">
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/15 border border-primary/30 text-text-main text-xs font-semibold tracking-wide uppercase mb-5">
             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             <span data-i18n="hero.badge">En vivo desde Discord</span>
           </div>
 
-          <h1 data-i18n-html="hero.title" class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-main leading-[1.15] mb-6">
-            Conectá con empresas tech directamente. <span class="underline decoration-primary decoration-wavy decoration-2 underline-offset-8">Sin intermediarios</span> ni filtros ATS.
+          <h1 data-i18n-html="hero.title"
+            class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-main leading-[1.18] mb-5 break-words max-w-full">
+            Conectá con empresas tech directamente. <span
+              class="underline decoration-primary decoration-wavy decoration-2 underline-offset-8">Sin
+              intermediarios</span> ni filtros ATS.
           </h1>
 
-          <p data-i18n="hero.description" class="text-lg sm:text-xl text-text-muted leading-relaxed max-w-2xl mb-8">
-            TechToJob es la comunidad de Discord donde desarrolladores y talento técnico se conectan directamente con líderes de empresas multinacionales y con feedback real y rápido.
+          <p data-i18n="hero.description" class="text-base sm:text-xl text-text-muted leading-relaxed max-w-2xl mb-8">
+            TechToJob es la comunidad de Discord donde desarrolladores y talento técnico se conectan directamente con
+            líderes de empresas multinacionales y con feedback real y rápido.
           </p>
 
-          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-10">
-            <a href="https://discord.gg/rY9hfDeqB" target="_blank" rel="noopener noreferrer" class="btn btn--primary text-base px-8 py-3.5">
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto mb-8">
+            <a href="https://discord.gg/rY9hfDeqB" target="_blank" rel="noopener noreferrer"
+              class="btn btn--primary text-base px-7 py-3.5 w-full sm:w-auto justify-center">
               <span data-i18n="hero.ctaDiscord">Sumate al Discord</span>
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </a>
-            <a href="#empresas" data-i18n="hero.ctaCompanies" class="btn btn--secondary text-base px-6 py-3.5">
+            <a href="#empresas" data-i18n="hero.ctaCompanies"
+              class="btn btn--secondary text-base px-6 py-3.5 w-full sm:w-auto justify-center">
               Acceso Empresas - Publicar vacantes
             </a>
           </div>
 
           <!-- Trust Badges Line -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-border-main w-full text-xs font-medium text-text-muted">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-6 border-t border-border-main w-full text-xs font-medium text-text-muted">
             <div class="flex items-center gap-2">
               <svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
               </svg>
               <span data-i18n="hero.trustActive">Comunidad 100% activa en Discord</span>
             </div>
             <div class="flex items-center gap-2">
               <svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
               </svg>
               <span data-i18n="hero.trustFeedback">Feedback directo en entrevistas</span>
             </div>
             <div class="flex items-center gap-2">
               <svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
               </svg>
               <span data-i18n="hero.trustTournaments">Torneos semanales con premios</span>
             </div>
@@ -174,65 +232,79 @@
         </div>
 
         <!-- Hero Mockup: Discord Window -->
-        <div class="lg:col-span-5">
-          <div class="bg-[#1e1f22] text-white rounded-2xl shadow-elevated border border-gray-800 p-5 overflow-hidden">
+        <div class="lg:col-span-5 w-full min-w-0">
+          <div
+            class="bg-[#1e1f22] text-white rounded-2xl shadow-elevated border border-gray-800 p-4 sm:p-5 overflow-hidden w-full">
             <!-- Discord Header -->
-            <div class="flex items-center justify-between pb-4 border-b border-gray-800 text-gray-300 text-sm">
-              <div class="flex items-center gap-2 font-semibold">
+            <div class="flex items-center justify-between pb-3.5 border-b border-gray-800 text-gray-300 text-sm gap-2">
+              <div class="flex items-center gap-2 font-semibold min-w-0">
                 <span class="text-gray-400 font-mono text-lg">#</span>
-                <span data-i18n="hero.mockupChannel" class="text-white">general-oportunidades</span>
+                <span data-i18n="hero.mockupChannel" class="text-white truncate">general-oportunidades</span>
               </div>
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 flex-shrink-0">
                 <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
                 <span data-i18n="hero.mockupOnline" class="text-xs text-gray-400">1,420 devs online</span>
               </div>
             </div>
 
             <!-- Discord Messages Stream -->
-            <div class="space-y-4 pt-4 text-xs sm:text-sm">
+            <div class="space-y-3.5 pt-3.5 text-xs sm:text-sm">
               <!-- Message 1: Recruiter -->
               <div class="flex items-start gap-3">
-                <div class="w-9 h-9 rounded-full bg-primary text-text-main font-bold flex items-center justify-center flex-shrink-0">
+                <div
+                  class="w-9 h-9 rounded-full bg-primary text-text-main font-bold flex items-center justify-center flex-shrink-0">
                   PV
                 </div>
-                <div>
-                  <div class="flex items-baseline gap-2">
+                <div class="min-w-0 flex-1">
+                  <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
                     <span class="font-bold text-white">Paula V.</span>
-                    <span data-i18n="hero.mockupRecruiterRole" class="bg-primary/30 text-primary-light text-[10px] px-1.5 py-0.5 rounded uppercase font-semibold">Recruiter</span>
+                    <span data-i18n="hero.mockupRecruiterRole"
+                      class="bg-primary/30 text-primary-light text-[10px] px-1.5 py-0.5 rounded uppercase font-semibold">Recruiter</span>
                     <span data-i18n="hero.mockupRecruiterTime" class="text-[11px] text-gray-400">Hoy 10:24</span>
                   </div>
-                  <p data-i18n-html="hero.mockupRecruiterMsg" class="text-gray-300 mt-1 leading-snug">
-                    Buscamos <strong>Senior Fullstack (React/Node)</strong> para startup Fintech en US. Remoto, $5,500 - $7,000 USD/mes. Manden DM directo los que quieran charlar hoy sin intermediarios.
+                  <p data-i18n-html="hero.mockupRecruiterMsg" class="text-gray-300 mt-1 leading-snug break-words">
+                    Buscamos <strong>Senior Fullstack (React/Node)</strong> para startup Fintech en US. Remoto, $5,500 -
+                    $7,000 USD/mes. Manden DM directo los que quieran charlar hoy sin intermediarios.
                   </p>
                 </div>
               </div>
 
               <!-- Message 2: Dev reply -->
               <div class="flex items-start gap-3 bg-gray-800/40 p-2.5 rounded-xl border border-gray-700/50">
-                <div class="w-9 h-9 rounded-full bg-indigo-500 text-white font-bold flex items-center justify-center flex-shrink-0">
+                <div
+                  class="w-9 h-9 rounded-full bg-indigo-500 text-white font-bold flex items-center justify-center flex-shrink-0">
                   TS
                 </div>
-                <div class="w-full">
-                  <div class="flex items-baseline gap-2">
+                <div class="w-full min-w-0 flex-1">
+                  <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
                     <span class="font-bold text-white">Tomás S.</span>
-                    <span data-i18n="hero.mockupDevBadge" class="bg-emerald-500/20 text-emerald-400 text-[10px] px-1.5 py-0.5 rounded font-semibold">Dev Verificado</span>
+                    <span data-i18n="hero.mockupDevBadge"
+                      class="bg-emerald-500/20 text-emerald-400 text-[10px] px-1.5 py-0.5 rounded font-semibold">Dev
+                      Verificado</span>
                     <span data-i18n="hero.mockupDevTime" class="text-[11px] text-gray-400">Hoy 10:28</span>
                   </div>
-                  <p data-i18n="hero.mockupDevMsg" class="text-gray-300 mt-1 leading-snug">
-                    ¡Hola Paula! Te mandé DM con mi repo y el reto del torneo pasado de TechToJob. ¡Disponible para charlar!
+                  <p data-i18n="hero.mockupDevMsg" class="text-gray-300 mt-1 leading-snug break-words">
+                    ¡Hola Paula! Te mandé DM con mi repo y el reto del torneo pasado de TechToJob. ¡Disponible para
+                    charlar!
                   </p>
-                  <div class="mt-2 bg-[#2b2d31] p-2 rounded text-[11px] font-mono text-primary flex items-center justify-between">
-                    <span data-i18n="hero.mockupDevRepo">git clone https://github.com/tomas/microservices-app</span>
-                    <span data-i18n="hero.mockupDevValidated" class="text-emerald-400">✓ Validado</span>
+                  <div
+                    class="mt-2 bg-[#2b2d31] p-2 rounded text-[11px] font-mono text-primary flex items-center justify-between gap-2 overflow-hidden">
+                    <span data-i18n="hero.mockupDevRepo" class="truncate min-w-0">git clone
+                      https://github.com/tomas/microservices-app</span>
+                    <span data-i18n="hero.mockupDevValidated" class="text-emerald-400 flex-shrink-0">✓ Validado</span>
                   </div>
                 </div>
               </div>
             </div>
 
             <!-- Discord Input bar -->
-            <div class="mt-4 pt-3 border-t border-gray-800 flex items-center justify-between bg-[#2b2d31] px-3 py-2 rounded-lg text-xs text-gray-400">
-              <span data-i18n="hero.mockupPlaceholder">Escribí tu mensaje o postulate en #oportunidades...</span>
-              <span data-i18n="hero.mockupSendDm" class="bg-primary text-text-main font-semibold px-2 py-1 rounded text-[11px]">Enviar DM</span>
+            <div
+              class="mt-4 pt-3 border-t border-gray-800 flex items-center justify-between bg-[#2b2d31] px-3 py-2 rounded-lg text-xs text-gray-400 gap-2">
+              <span data-i18n="hero.mockupPlaceholder" class="truncate min-w-0">Escribí tu mensaje o postulate en
+                #oportunidades...</span>
+              <span data-i18n="hero.mockupSendDm"
+                class="bg-primary text-text-main font-semibold px-2 py-1 rounded text-[11px] flex-shrink-0">Enviar
+                DM</span>
             </div>
           </div>
         </div>
@@ -243,10 +315,12 @@
     <section id="como-funciona" class="py-section-mob lg:py-section-desk bg-bg-alt border-y border-border-main">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <span data-i18n="howItWorks.badge" class="text-xs font-bold tracking-wider text-text-main uppercase bg-primary/25 px-3 py-1 rounded-full inline-block mb-3">
+          <span data-i18n="howItWorks.badge"
+            class="text-xs font-bold tracking-wider text-text-main uppercase bg-primary/25 px-3 py-1 rounded-full inline-block mb-3">
             Fácil y Ágil
           </span>
-          <h2 data-i18n="howItWorks.title" class="text-3xl sm:text-4xl font-extrabold text-text-main tracking-tight mb-4">
+          <h2 data-i18n="howItWorks.title"
+            class="text-3xl sm:text-4xl font-extrabold text-text-main tracking-tight mb-4">
             Cómo funciona la comunidad
           </h2>
           <p data-i18n="howItWorks.subtitle" class="text-base sm:text-lg text-text-muted">
@@ -258,16 +332,20 @@
           <!-- Step 1 -->
           <div class="card flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 rounded-2xl bg-primary/20 text-text-main flex items-center justify-center font-bold text-lg mb-6">
+              <div
+                class="w-12 h-12 rounded-2xl bg-primary/20 text-text-main flex items-center justify-center font-bold text-lg mb-6">
                 01
               </div>
-              <h3 data-i18n="howItWorks.step1.title" class="text-xl font-bold text-text-main mb-2">Unirte a la comunidad</h3>
+              <h3 data-i18n="howItWorks.step1.title" class="text-xl font-bold text-text-main mb-2">Unirte a la comunidad
+              </h3>
               <p data-i18n="howItWorks.step1.desc" class="text-sm text-text-muted leading-relaxed">
-                Ingresá a nuestro servidor de Discord y seleccioná tus roles, tecnologías e intereses para personalizar tu experiencia.
+                Ingresá a nuestro servidor de Discord y seleccioná tus roles, tecnologías e intereses para personalizar
+                tu experiencia.
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-border-main">
-              <a href="https://discord.gg/rY9hfDeqB" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-text-main hover:text-primary-hover inline-flex items-center gap-1.5 focus-visible:ring-2 focus-visible:ring-primary rounded">
+              <a href="https://discord.gg/rY9hfDeqB" target="_blank" rel="noopener noreferrer"
+                class="text-sm font-semibold text-text-main hover:text-primary-hover inline-flex items-center gap-1.5 focus-visible:ring-2 focus-visible:ring-primary rounded">
                 <span data-i18n="howItWorks.step1.cta">Sumarme ahora →</span>
               </a>
             </div>
@@ -276,16 +354,20 @@
           <!-- Step 2 -->
           <div class="card flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 rounded-2xl bg-primary/20 text-text-main flex items-center justify-center font-bold text-lg mb-6">
+              <div
+                class="w-12 h-12 rounded-2xl bg-primary/20 text-text-main flex items-center justify-center font-bold text-lg mb-6">
                 02
               </div>
-              <h3 data-i18n="howItWorks.step2.title" class="text-xl font-bold text-text-main mb-2">Completá tu perfil tech</h3>
+              <h3 data-i18n="howItWorks.step2.title" class="text-xl font-bold text-text-main mb-2">Completá tu perfil
+                tech</h3>
               <p data-i18n="howItWorks.step2.desc" class="text-sm text-text-muted leading-relaxed">
-                Mostrá tus habilidades reales, repositorio de GitHub y proyectos destacados para validar tu nivel técnico sin adornar CVs.
+                Mostrá tus habilidades reales, repositorio de GitHub y proyectos destacados para validar tu nivel
+                técnico sin adornar CVs.
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-border-main">
-              <a href="#talento" class="text-sm font-semibold text-text-main hover:text-primary-hover inline-flex items-center gap-1.5 focus-visible:ring-2 focus-visible:ring-primary rounded">
+              <a href="#talento"
+                class="text-sm font-semibold text-text-main hover:text-primary-hover inline-flex items-center gap-1.5 focus-visible:ring-2 focus-visible:ring-primary rounded">
                 <span data-i18n="howItWorks.step2.cta">Configurar perfil →</span>
               </a>
             </div>
@@ -294,16 +376,20 @@
           <!-- Step 3 -->
           <div class="card flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 rounded-2xl bg-primary/20 text-text-main flex items-center justify-center font-bold text-lg mb-6">
+              <div
+                class="w-12 h-12 rounded-2xl bg-primary/20 text-text-main flex items-center justify-center font-bold text-lg mb-6">
                 03
               </div>
-              <h3 data-i18n="howItWorks.step3.title" class="text-xl font-bold text-text-main mb-2">Interactuá directamente</h3>
+              <h3 data-i18n="howItWorks.step3.title" class="text-xl font-bold text-text-main mb-2">Interactuá
+                directamente</h3>
               <p data-i18n="howItWorks.step3.desc" class="text-sm text-text-muted leading-relaxed">
-                Participá en torneos de código, interactuá en canales de debate y aplicá a vacantes con feedback garantizado.
+                Participá en torneos de código, interactuá en canales de debate y aplicá a vacantes con feedback
+                garantizado.
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-border-main">
-              <a href="#torneos" class="text-sm font-semibold text-text-main hover:text-primary-hover inline-flex items-center gap-1.5 focus-visible:ring-2 focus-visible:ring-primary rounded">
+              <a href="#torneos"
+                class="text-sm font-semibold text-text-main hover:text-primary-hover inline-flex items-center gap-1.5 focus-visible:ring-2 focus-visible:ring-primary rounded">
                 <span data-i18n="howItWorks.step3.cta">Ver dinámicas →</span>
               </a>
             </div>
@@ -312,16 +398,20 @@
           <!-- Step 4 -->
           <div class="card flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 rounded-2xl bg-primary/20 text-text-main flex items-center justify-center font-bold text-lg mb-6">
+              <div
+                class="w-12 h-12 rounded-2xl bg-primary/20 text-text-main flex items-center justify-center font-bold text-lg mb-6">
                 04
               </div>
-              <h3 data-i18n="howItWorks.step4.title" class="text-xl font-bold text-text-main mb-2">Contratación sin comisión</h3>
+              <h3 data-i18n="howItWorks.step4.title" class="text-xl font-bold text-text-main mb-2">Contratación sin
+                comisión</h3>
               <p data-i18n="howItWorks.step4.desc" class="text-sm text-text-muted leading-relaxed">
-                Cerrá contratos directamente con las empresas. Sin comisiones sorpresa, sin agencias de por medio ni ataduras.
+                Cerrá contratos directamente con las empresas. Sin comisiones sorpresa, sin agencias de por medio ni
+                ataduras.
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-border-main">
-              <a href="https://discord.gg/rY9hfDeqB" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-text-main hover:text-primary-hover inline-flex items-center gap-1.5 focus-visible:ring-2 focus-visible:ring-primary rounded">
+              <a href="https://discord.gg/rY9hfDeqB" target="_blank" rel="noopener noreferrer"
+                class="text-sm font-semibold text-text-main hover:text-primary-hover inline-flex items-center gap-1.5 focus-visible:ring-2 focus-visible:ring-primary rounded">
                 <span data-i18n="howItWorks.step4.cta">Empezar hoy →</span>
               </a>
             </div>
@@ -337,40 +427,52 @@
         <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <!-- Text -->
           <div class="lg:w-1/2">
-            <span data-i18n="talent.badge" class="text-xs font-bold tracking-wider text-text-main uppercase bg-primary/25 px-3 py-1 rounded-full inline-block mb-4">
+            <span data-i18n="talent.badge"
+              class="text-xs font-bold tracking-wider text-text-main uppercase bg-primary/25 px-3 py-1 rounded-full inline-block mb-4">
               Talento Técnico en Discord
             </span>
-            <h2 data-i18n="talent.title" class="text-3xl sm:text-4xl font-extrabold text-text-main tracking-tight leading-tight mb-6">
+            <h2 data-i18n="talent.title"
+              class="text-3xl sm:text-4xl font-extrabold text-text-main tracking-tight leading-tight mb-6">
               Tu talento valorado por lo que sabés hacer, no por palabras clave en un PDF.
             </h2>
             <p data-i18n="talent.description" class="text-base sm:text-lg text-text-muted mb-8 leading-relaxed">
-              En TechToJob eliminamos los filtros opacos de selección. Tu seniority se demuestra con código en vivo, participación técnica y resolución de desafíos reales ante pares y líderes.
+              En TechToJob eliminamos los filtros opacos de selección. Tu seniority se demuestra con código en vivo,
+              participación técnica y resolución de desafíos reales ante pares y líderes.
             </p>
 
             <ul class="space-y-4 mb-8 text-sm sm:text-base text-text-main">
               <li class="flex items-start gap-3">
                 <span class="p-1 rounded-full bg-primary/20 text-text-main mt-0.5">
                   <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd" />
                   </svg>
                 </span>
-                <span data-i18n-html="talent.point1"><strong>Feedback honesto y directo:</strong> Hablás cara a cara con Tech Leads y founders.</span>
+                <span data-i18n-html="talent.point1"><strong>Feedback honesto y directo:</strong> Hablás cara a cara con
+                  Tech Leads y founders.</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="p-1 rounded-full bg-primary/20 text-text-main mt-0.5">
                   <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd" />
                   </svg>
                 </span>
-                <span data-i18n-html="talent.point2"><strong>Salarios transparentes en USD:</strong> Ofertas claras con rangos salariales explícitos.</span>
+                <span data-i18n-html="talent.point2"><strong>Salarios transparentes en USD:</strong> Ofertas claras con
+                  rangos salariales explícitos.</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="p-1 rounded-full bg-primary/20 text-text-main mt-0.5">
                   <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd" />
                   </svg>
                 </span>
-                <span data-i18n-html="talent.point3"><strong>Comunidad activa 24/7:</strong> Canales de dudas de arquitectura, preparación de entrevistas y torneos.</span>
+                <span data-i18n-html="talent.point3"><strong>Comunidad activa 24/7:</strong> Canales de dudas de
+                  arquitectura, preparación de entrevistas y torneos.</span>
               </li>
             </ul>
 
@@ -384,15 +486,18 @@
             <div class="card p-6 sm:p-8 bg-white border border-border-main shadow-card relative">
               <div class="flex items-center justify-between pb-6 border-b border-border-main">
                 <div class="flex items-center gap-4">
-                  <div class="w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center font-bold text-lg text-text-main">
+                  <div
+                    class="w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center font-bold text-lg text-text-main">
                     AG
                   </div>
                   <div>
                     <h3 data-i18n="talent.mockupName" class="font-bold text-text-main text-base">Andrés Gutiérrez</h3>
-                    <p data-i18n="talent.mockupRole" class="text-xs text-text-muted">Full Stack Engineer &bull; Nivel 4</p>
+                    <p data-i18n="talent.mockupRole" class="text-xs text-text-muted">Full Stack Engineer &bull; Nivel 4
+                    </p>
                   </div>
                 </div>
-                <span data-i18n="talent.mockupBadge" class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
+                <span data-i18n="talent.mockupBadge"
+                  class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
                   Top 5% Torneo
                 </span>
               </div>
@@ -413,19 +518,28 @@
               </div>
 
               <div class="space-y-2">
-                <span data-i18n="talent.mockupStackTitle" class="text-xs font-semibold text-text-muted uppercase tracking-wider block">Stack Validado en Discord</span>
+                <span data-i18n="talent.mockupStackTitle"
+                  class="text-xs font-semibold text-text-muted uppercase tracking-wider block">Stack Validado en
+                  Discord</span>
                 <div class="flex flex-wrap gap-2">
-                  <span class="px-2.5 py-1 rounded-md text-xs bg-bg-alt border border-border-main text-text-main">TypeScript</span>
-                  <span class="px-2.5 py-1 rounded-md text-xs bg-bg-alt border border-border-main text-text-main">React 18</span>
-                  <span class="px-2.5 py-1 rounded-md text-xs bg-bg-alt border border-border-main text-text-main">Node.js</span>
-                  <span class="px-2.5 py-1 rounded-md text-xs bg-bg-alt border border-border-main text-text-main">PostgreSQL</span>
-                  <span class="px-2.5 py-1 rounded-md text-xs bg-bg-alt border border-border-main text-text-main">Docker</span>
+                  <span
+                    class="px-2.5 py-1 rounded-md text-xs bg-bg-alt border border-border-main text-text-main">TypeScript</span>
+                  <span class="px-2.5 py-1 rounded-md text-xs bg-bg-alt border border-border-main text-text-main">React
+                    18</span>
+                  <span
+                    class="px-2.5 py-1 rounded-md text-xs bg-bg-alt border border-border-main text-text-main">Node.js</span>
+                  <span
+                    class="px-2.5 py-1 rounded-md text-xs bg-bg-alt border border-border-main text-text-main">PostgreSQL</span>
+                  <span
+                    class="px-2.5 py-1 rounded-md text-xs bg-bg-alt border border-border-main text-text-main">Docker</span>
                 </div>
               </div>
 
-              <div class="mt-6 pt-4 border-t border-border-main flex items-center justify-between text-xs text-text-muted">
+              <div
+                class="mt-6 pt-4 border-t border-border-main flex items-center justify-between text-xs text-text-muted">
                 <span data-i18n="talent.mockupFooterLeft">Evaluado por Engineering Leads</span>
-                <span data-i18n="talent.mockupFooterRight" class="text-emerald-700 font-semibold">Listo para contratar</span>
+                <span data-i18n="talent.mockupFooterRight" class="text-emerald-700 font-semibold">Listo para
+                  contratar</span>
               </div>
             </div>
           </div>
@@ -439,40 +553,52 @@
         <div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-16">
           <!-- Text -->
           <div class="lg:w-1/2">
-            <span data-i18n="companies.badge" class="text-xs font-bold tracking-wider text-text-main uppercase bg-primary/25 px-3 py-1 rounded-full inline-block mb-4">
+            <span data-i18n="companies.badge"
+              class="text-xs font-bold tracking-wider text-text-main uppercase bg-primary/25 px-3 py-1 rounded-full inline-block mb-4">
               Para Líderes de Tech & Recruiters
             </span>
-            <h2 data-i18n="companies.title" class="text-3xl sm:text-4xl font-extrabold text-text-main tracking-tight leading-tight mb-6">
+            <h2 data-i18n="companies.title"
+              class="text-3xl sm:text-4xl font-extrabold text-text-main tracking-tight leading-tight mb-6">
               Accedé al top 10% de talento tech activo sin pagar comisiones abusivas.
             </h2>
             <p data-i18n="companies.description" class="text-base sm:text-lg text-text-muted mb-8 leading-relaxed">
-              Olvidate de fees de agencia del 20% al 30%. En TechToJob publicás tus vacantes directamente ante miles de ingenieros validados técnicamente por la comunidad en Discord.
+              Olvidate de fees de agencia del 20% al 30%. En TechToJob publicás tus vacantes directamente ante miles de
+              ingenieros validados técnicamente por la comunidad en Discord.
             </p>
 
             <ul class="space-y-4 mb-8 text-sm sm:text-base text-text-main">
               <li class="flex items-start gap-3">
                 <span class="p-1 rounded-full bg-primary/20 text-text-main mt-0.5">
                   <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd" />
                   </svg>
                 </span>
-                <span data-i18n-html="companies.point1"><strong>Publicación directa de vacantes:</strong> Canales segmentados por seniority y stack tecnológico.</span>
+                <span data-i18n-html="companies.point1"><strong>Publicación directa de vacantes:</strong> Canales
+                  segmentados por seniority y stack tecnológico.</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="p-1 rounded-full bg-primary/20 text-text-main mt-0.5">
                   <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd" />
                   </svg>
                 </span>
-                <span data-i18n-html="companies.point2"><strong>Respuesta en menos de 24 horas:</strong> Candidatos activos en tiempo real con ganas de trabajar.</span>
+                <span data-i18n-html="companies.point2"><strong>Respuesta en menos de 24 horas:</strong> Candidatos
+                  activos en tiempo real con ganas de trabajar.</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="p-1 rounded-full bg-primary/20 text-text-main mt-0.5">
                   <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd" />
                   </svg>
                 </span>
-                <span data-i18n-html="companies.point3"><strong>Sin comisiones por contratación:</strong> 0% de intermediación, sin letras chicas.</span>
+                <span data-i18n-html="companies.point3"><strong>Sin comisiones por contratación:</strong> 0% de
+                  intermediación, sin letras chicas.</span>
               </li>
             </ul>
 
@@ -486,8 +612,10 @@
             <div class="card p-6 sm:p-8 bg-white border border-border-main shadow-card">
               <div class="flex items-center justify-between pb-4 border-b border-border-main mb-4">
                 <div>
-                  <h3 data-i18n="companies.mockupTitle" class="font-bold text-text-main text-base">Candidatos Validados en Vivo</h3>
-                  <p data-i18n="companies.mockupSubtitle" class="text-xs text-text-muted">34 perfiles activos esta semana</p>
+                  <h3 data-i18n="companies.mockupTitle" class="font-bold text-text-main text-base">Candidatos Validados
+                    en Vivo</h3>
+                  <p data-i18n="companies.mockupSubtitle" class="text-xs text-text-muted">34 perfiles activos esta
+                    semana</p>
                 </div>
                 <span class="w-3 h-3 rounded-full bg-emerald-500 animate-ping"></span>
               </div>
@@ -496,41 +624,53 @@
                 <!-- Candidate 1 -->
                 <div class="p-3 bg-bg-alt rounded-xl border border-border-main flex items-center justify-between">
                   <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-emerald-200 text-emerald-900 font-bold flex items-center justify-center text-sm">
+                    <div
+                      class="w-10 h-10 rounded-full bg-emerald-200 text-emerald-900 font-bold flex items-center justify-center text-sm">
                       ML
                     </div>
                     <div>
-                      <div data-i18n="companies.mockupCand1Name" class="font-bold text-sm text-text-main">Matias L.</div>
-                      <div data-i18n="companies.mockupCand1Role" class="text-xs text-text-muted">Lead DevOps &bull; AWS / K8s</div>
+                      <div data-i18n="companies.mockupCand1Name" class="font-bold text-sm text-text-main">Matias L.
+                      </div>
+                      <div data-i18n="companies.mockupCand1Role" class="text-xs text-text-muted">Lead DevOps &bull; AWS
+                        / K8s</div>
                     </div>
                   </div>
                   <div class="text-right">
-                    <span data-i18n="companies.mockupCand1Match" class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">98% Match</span>
-                    <span data-i18n="companies.mockupCand1Disp" class="block text-[11px] text-text-muted mt-1">Disp. Inmediata</span>
+                    <span data-i18n="companies.mockupCand1Match"
+                      class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">98% Match</span>
+                    <span data-i18n="companies.mockupCand1Disp" class="block text-[11px] text-text-muted mt-1">Disp.
+                      Inmediata</span>
                   </div>
                 </div>
 
                 <!-- Candidate 2 -->
                 <div class="p-3 bg-bg-alt rounded-xl border border-border-main flex items-center justify-between">
                   <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-indigo-200 text-indigo-900 font-bold flex items-center justify-center text-sm">
+                    <div
+                      class="w-10 h-10 rounded-full bg-indigo-200 text-indigo-900 font-bold flex items-center justify-center text-sm">
                       VR
                     </div>
                     <div>
-                      <div data-i18n="companies.mockupCand2Name" class="font-bold text-sm text-text-main">Valeria R.</div>
-                      <div data-i18n="companies.mockupCand2Role" class="text-xs text-text-muted">Senior Frontend &bull; Next.js / TS</div>
+                      <div data-i18n="companies.mockupCand2Name" class="font-bold text-sm text-text-main">Valeria R.
+                      </div>
+                      <div data-i18n="companies.mockupCand2Role" class="text-xs text-text-muted">Senior Frontend &bull;
+                        Next.js / TS</div>
                     </div>
                   </div>
                   <div class="text-right">
-                    <span data-i18n="companies.mockupCand2Match" class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">95% Match</span>
-                    <span data-i18n="companies.mockupCand2Disp" class="block text-[11px] text-text-muted mt-1">Disp. 2 semanas</span>
+                    <span data-i18n="companies.mockupCand2Match"
+                      class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">95% Match</span>
+                    <span data-i18n="companies.mockupCand2Disp" class="block text-[11px] text-text-muted mt-1">Disp. 2
+                      semanas</span>
                   </div>
                 </div>
               </div>
 
               <div class="mt-6 pt-4 border-t border-border-main flex items-center justify-between">
-                <span data-i18n="companies.mockupFilterText" class="text-xs text-text-muted">Filtrá por stack, experiencia y salario</span>
-                <span data-i18n="companies.mockupViewAll" class="text-xs font-bold text-text-main underline cursor-pointer">Ver todos los perfiles &rarr;</span>
+                <span data-i18n="companies.mockupFilterText" class="text-xs text-text-muted">Filtrá por stack,
+                  experiencia y salario</span>
+                <span data-i18n="companies.mockupViewAll"
+                  class="text-xs font-bold text-text-main underline cursor-pointer">Ver todos los perfiles &rarr;</span>
               </div>
             </div>
           </div>
@@ -542,36 +682,46 @@
     <section id="torneos" class="py-section-mob lg:py-section-desk">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center max-w-3xl mx-auto mb-14">
-          <span data-i18n="tournaments.badge" class="text-xs font-bold tracking-wider text-text-main uppercase bg-primary/25 px-3 py-1 rounded-full inline-block mb-3">
+          <span data-i18n="tournaments.badge"
+            class="text-xs font-bold tracking-wider text-text-main uppercase bg-primary/25 px-3 py-1 rounded-full inline-block mb-3">
             Competición y Premios Mensuales
           </span>
-          <h2 data-i18n="tournaments.title" class="text-3xl sm:text-4xl font-extrabold text-text-main tracking-tight mb-4">
+          <h2 data-i18n="tournaments.title"
+            class="text-3xl sm:text-4xl font-extrabold text-text-main tracking-tight mb-4">
             Torneos y Challenges Técnicos
           </h2>
           <p data-i18n="tournaments.subtitle" class="text-base sm:text-lg text-text-muted">
-            Participá de nuestros retos de código en vivo y mostrá tu destreza técnica ante reclutadores y empresas que buscan talento proactivo.
+            Participá de nuestros retos de código en vivo y mostrá tu destreza técnica ante reclutadores y empresas que
+            buscan talento proactivo.
           </p>
         </div>
 
         <!-- Scroll Snap Container: flex overflow-x-auto snap-x snap-mandatory on mobile -> grid on md/lg -->
-        <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 no-scrollbar pb-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible md:pb-0">
+        <div
+          class="flex overflow-x-auto snap-x snap-mandatory gap-6 no-scrollbar pb-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible md:pb-0">
           <!-- Torneo 1 -->
           <div class="w-[85vw] sm:w-[360px] md:w-auto flex-shrink-0 snap-center card flex flex-col justify-between">
             <div>
-              <div class="flex items-center justify-between text-xs text-text-muted mb-4 pb-3 border-b border-border-main">
-                <span data-i18n="tournaments.card1.tag" class="px-2.5 py-1 rounded-full bg-gray-100 font-semibold text-text-main">Próximo evento</span>
+              <div
+                class="flex items-center justify-between text-xs text-text-muted mb-4 pb-3 border-b border-border-main">
+                <span data-i18n="tournaments.card1.tag"
+                  class="px-2.5 py-1 rounded-full bg-gray-100 font-semibold text-text-main">Próximo evento</span>
                 <span data-i18n="tournaments.card1.date">15 de Octubre, 2026</span>
               </div>
-              <div class="w-10 h-10 rounded-xl bg-primary/20 text-text-main flex items-center justify-center mb-4 font-bold">
+              <div
+                class="w-10 h-10 rounded-xl bg-primary/20 text-text-main flex items-center justify-center mb-4 font-bold">
                 &lt;/&gt;
               </div>
-              <h3 data-i18n="tournaments.card1.title" class="text-xl font-bold text-text-main mb-2">Hackathon Full Stack MERN</h3>
+              <h3 data-i18n="tournaments.card1.title" class="text-xl font-bold text-text-main mb-2">Hackathon Full Stack
+                MERN</h3>
               <p data-i18n="tournaments.card1.desc" class="text-sm text-text-muted leading-relaxed mb-6">
-                Construí una solución escalable en 48 horas en equipo. Evaluado por Founders y CTOs de startups que contratan activamente.
+                Construí una solución escalable en 48 horas en equipo. Evaluado por Founders y CTOs de startups que
+                contratan activamente.
               </p>
               <div class="p-3 bg-bg-alt rounded-xl border border-border-main mb-6">
                 <span data-i18n="tournaments.card1.prizeLabel" class="text-xs text-text-muted block">Premio</span>
-                <span data-i18n="tournaments.card1.prizeValue" class="font-extrabold text-base text-text-main">$2,500 USD + Entrevistas directas</span>
+                <span data-i18n="tournaments.card1.prizeValue" class="font-extrabold text-base text-text-main">$2,500
+                  USD + Entrevistas directas</span>
               </div>
             </div>
             <button type="button" class="btn btn--secondary w-full text-sm">
@@ -580,28 +730,37 @@
           </div>
 
           <!-- Torneo 2 (Destacado) -->
-          <div class="w-[85vw] sm:w-[360px] md:w-auto flex-shrink-0 snap-center card border-primary/50 shadow-card flex flex-col justify-between relative ring-1 ring-primary/40">
-            <div data-i18n="tournaments.card2.liveBadge" class="absolute -top-3 right-6 bg-red-600 text-white text-[11px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">
+          <div
+            class="w-[85vw] sm:w-[360px] md:w-auto flex-shrink-0 snap-center card border-primary/50 shadow-card flex flex-col justify-between relative ring-1 ring-primary/40">
+            <div data-i18n="tournaments.card2.liveBadge"
+              class="absolute -top-3 right-6 bg-red-600 text-white text-[11px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">
               En Vivo Hoy
             </div>
             <div>
-              <div class="flex items-center justify-between text-xs text-text-muted mb-4 pb-3 border-b border-border-main">
-                <span data-i18n="tournaments.card2.tag" class="px-2.5 py-1 rounded-full bg-red-100 text-red-700 font-semibold">Speed Coding</span>
+              <div
+                class="flex items-center justify-between text-xs text-text-muted mb-4 pb-3 border-b border-border-main">
+                <span data-i18n="tournaments.card2.tag"
+                  class="px-2.5 py-1 rounded-full bg-red-100 text-red-700 font-semibold">Speed Coding</span>
                 <span data-i18n="tournaments.card2.date" class="text-red-600 font-bold">En curso</span>
               </div>
-              <div class="w-10 h-10 rounded-xl bg-primary text-text-main flex items-center justify-center mb-4 font-bold">
+              <div
+                class="w-10 h-10 rounded-xl bg-primary text-text-main flex items-center justify-center mb-4 font-bold">
                 ⚡
               </div>
-              <h3 data-i18n="tournaments.card2.title" class="text-xl font-bold text-text-main mb-2">Algoritmos & Speed Coding</h3>
+              <h3 data-i18n="tournaments.card2.title" class="text-xl font-bold text-text-main mb-2">Algoritmos & Speed
+                Coding</h3>
               <p data-i18n="tournaments.card2.desc" class="text-sm text-text-muted leading-relaxed mb-6">
-                Resolvé 4 problemas de optimización algorítmica contrarreloj. Los 3 mejores tiempos obtienen oferta formal de entrevista técnica.
+                Resolvé 4 problemas de optimización algorítmica contrarreloj. Los 3 mejores tiempos obtienen oferta
+                formal de entrevista técnica.
               </p>
               <div class="p-3 bg-primary/15 rounded-xl border border-primary/30 mb-6">
                 <span data-i18n="tournaments.card2.prizeLabel" class="text-xs text-text-muted block">Premio</span>
-                <span data-i18n="tournaments.card2.prizeValue" class="font-extrabold text-base text-text-main">$1,000 USD + Fast-Track Match</span>
+                <span data-i18n="tournaments.card2.prizeValue" class="font-extrabold text-base text-text-main">$1,000
+                  USD + Fast-Track Match</span>
               </div>
             </div>
-            <a href="https://discord.gg/rY9hfDeqB" target="_blank" rel="noopener noreferrer" class="btn btn--primary w-full text-sm">
+            <a href="https://discord.gg/rY9hfDeqB" target="_blank" rel="noopener noreferrer"
+              class="btn btn--primary w-full text-sm">
               <span data-i18n="tournaments.card2.cta">Inscribirme al Torneo</span>
             </a>
           </div>
@@ -609,20 +768,27 @@
           <!-- Torneo 3 -->
           <div class="w-[85vw] sm:w-[360px] md:w-auto flex-shrink-0 snap-center card flex flex-col justify-between">
             <div>
-              <div class="flex items-center justify-between text-xs text-text-muted mb-4 pb-3 border-b border-border-main">
-                <span data-i18n="tournaments.card3.tag" class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 font-semibold">Inscripción Abierta</span>
+              <div
+                class="flex items-center justify-between text-xs text-text-muted mb-4 pb-3 border-b border-border-main">
+                <span data-i18n="tournaments.card3.tag"
+                  class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 font-semibold">Inscripción
+                  Abierta</span>
                 <span data-i18n="tournaments.card3.date">28 de Octubre, 2026</span>
               </div>
-              <div class="w-10 h-10 rounded-xl bg-primary/20 text-text-main flex items-center justify-center mb-4 font-bold">
+              <div
+                class="w-10 h-10 rounded-xl bg-primary/20 text-text-main flex items-center justify-center mb-4 font-bold">
                 ☁
               </div>
-              <h3 data-i18n="tournaments.card3.title" class="text-xl font-bold text-text-main mb-2">DevOps & Cloud Arena</h3>
+              <h3 data-i18n="tournaments.card3.title" class="text-xl font-bold text-text-main mb-2">DevOps & Cloud Arena
+              </h3>
               <p data-i18n="tournaments.card3.desc" class="text-sm text-text-muted leading-relaxed mb-6">
-                Automatizá arquitecturas resilientes con Kubernetes y Terraform bajo pruebas de estrés y caos en tiempo real.
+                Automatizá arquitecturas resilientes con Kubernetes y Terraform bajo pruebas de estrés y caos en tiempo
+                real.
               </p>
               <div class="p-3 bg-bg-alt rounded-xl border border-border-main mb-6">
                 <span data-i18n="tournaments.card3.prizeLabel" class="text-xs text-text-muted block">Premio</span>
-                <span data-i18n="tournaments.card3.prizeValue" class="font-extrabold text-base text-text-main">$1,800 USD + Certificaciones</span>
+                <span data-i18n="tournaments.card3.prizeValue" class="font-extrabold text-base text-text-main">$1,800
+                  USD + Certificaciones</span>
               </div>
             </div>
             <button type="button" class="btn btn--secondary w-full text-sm">
@@ -640,33 +806,42 @@
     <!-- STATS BANNER (DARK SECTION) -->
     <section class="py-12 lg:py-16">
       <div class="max-w-7xl mx-auto px-6">
-        <div class="bg-bg-dark text-white rounded-3xl p-8 sm:p-12 lg:p-16 text-center shadow-card relative overflow-hidden">
+        <div
+          class="bg-bg-dark text-white rounded-3xl p-8 sm:p-12 lg:p-16 text-center shadow-card relative overflow-hidden">
           <span data-i18n="stats.badge" class="text-xs font-bold tracking-widest text-primary uppercase block mb-3">
             Resultados, no palabras o promesas
           </span>
-          <h2 data-i18n="stats.title" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight max-w-3xl mx-auto leading-tight mb-6">
+          <h2 data-i18n="stats.title"
+            class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight max-w-3xl mx-auto leading-tight mb-6">
             La distancia más corta entre vos y tu próximo trabajo es un mensaje directo.
           </h2>
-          <p data-i18n="stats.description" class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto mb-12 leading-relaxed">
-            Validá tus conocimientos técnicos en Discord y conseguí oportunidades laborales que se cierran en días, no meses de silencio.
+          <p data-i18n="stats.description"
+            class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto mb-12 leading-relaxed">
+            Validá tus conocimientos técnicos en Discord y conseguí oportunidades laborales que se cierran en días, no
+            meses de silencio.
           </p>
 
           <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 pt-8 border-t border-gray-800">
             <div>
               <div data-i18n="stats.stat1Val" class="text-4xl sm:text-5xl font-extrabold text-primary mb-2">100%</div>
-              <div data-i18n="stats.stat1Label" class="text-xs sm:text-sm text-gray-400 font-medium">Trato directo sin intermediarios</div>
+              <div data-i18n="stats.stat1Label" class="text-xs sm:text-sm text-gray-400 font-medium">Trato directo sin
+                intermediarios</div>
             </div>
             <div>
               <div data-i18n="stats.stat2Val" class="text-4xl sm:text-5xl font-extrabold text-primary mb-2">0</div>
-              <div data-i18n="stats.stat2Label" class="text-xs sm:text-sm text-gray-400 font-medium">Filtros ATS opacos</div>
+              <div data-i18n="stats.stat2Label" class="text-xs sm:text-sm text-gray-400 font-medium">Filtros ATS opacos
+              </div>
             </div>
             <div>
-              <div data-i18n="stats.stat3Val" class="text-4xl sm:text-5xl font-extrabold text-primary mb-2">&lt; 24h</div>
-              <div data-i18n="stats.stat3Label" class="text-xs sm:text-sm text-gray-400 font-medium">Tiempo medio de respuesta</div>
+              <div data-i18n="stats.stat3Val" class="text-4xl sm:text-5xl font-extrabold text-primary mb-2">&lt; 24h
+              </div>
+              <div data-i18n="stats.stat3Label" class="text-xs sm:text-sm text-gray-400 font-medium">Tiempo medio de
+                respuesta</div>
             </div>
             <div>
               <div data-i18n="stats.stat4Val" class="text-4xl sm:text-5xl font-extrabold text-primary mb-2">$0</div>
-              <div data-i18n="stats.stat4Label" class="text-xs sm:text-sm text-gray-400 font-medium">Comisiones a candidatos</div>
+              <div data-i18n="stats.stat4Label" class="text-xs sm:text-sm text-gray-400 font-medium">Comisiones a
+                candidatos</div>
             </div>
           </div>
         </div>
@@ -677,10 +852,12 @@
     <section id="testimonios" class="py-section-mob lg:py-section-desk bg-bg-alt border-y border-border-main">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <span data-i18n="testimonials.badge" class="text-xs font-bold tracking-wider text-text-main uppercase bg-primary/25 px-3 py-1 rounded-full inline-block mb-3">
+          <span data-i18n="testimonials.badge"
+            class="text-xs font-bold tracking-wider text-text-main uppercase bg-primary/25 px-3 py-1 rounded-full inline-block mb-3">
             Testimonios
           </span>
-          <h2 data-i18n="testimonials.title" class="text-3xl sm:text-4xl font-extrabold text-text-main tracking-tight mb-4">
+          <h2 data-i18n="testimonials.title"
+            class="text-3xl sm:text-4xl font-extrabold text-text-main tracking-tight mb-4">
             Lo que dice la comunidad
           </h2>
           <p data-i18n="testimonials.subtitle" class="text-base sm:text-lg text-text-muted">
@@ -694,11 +871,13 @@
             <div>
               <div class="text-primary font-serif text-5xl leading-none mb-4">&ldquo;</div>
               <p data-i18n="testimonials.item1Quote" class="text-text-muted text-sm sm:text-base leading-relaxed mb-6">
-                Entré al Discord sin expectativas y a las dos semanas estaba haciendo un pair programming con el Engineering Manager de una fintech. Me contrataron sin pasar por un solo ATS.
+                Entré al Discord sin expectativas y a las dos semanas estaba haciendo un pair programming con el
+                Engineering Manager de una fintech. Me contrataron sin pasar por un solo ATS.
               </p>
             </div>
             <div class="flex items-center gap-3 pt-4 border-t border-border-main">
-              <div class="w-10 h-10 rounded-full bg-primary/30 text-text-main font-bold flex items-center justify-center text-sm">
+              <div
+                class="w-10 h-10 rounded-full bg-primary/30 text-text-main font-bold flex items-center justify-center text-sm">
                 MG
               </div>
               <div>
@@ -713,11 +892,13 @@
             <div>
               <div class="text-primary font-serif text-5xl leading-none mb-4">&ldquo;</div>
               <p data-i18n="testimonials.item2Quote" class="text-text-muted text-sm sm:text-base leading-relaxed mb-6">
-                Publicamos una vacante de Frontend Lead y en 48 horas recibimos postulaciones con repositorios reales y demos funcionales. El proceso de selección más ágil de mi carrera.
+                Publicamos una vacante de Frontend Lead y en 48 horas recibimos postulaciones con repositorios reales y
+                demos funcionales. El proceso de selección más ágil de mi carrera.
               </p>
             </div>
             <div class="flex items-center gap-3 pt-4 border-t border-border-main">
-              <div class="w-10 h-10 rounded-full bg-indigo-100 text-indigo-800 font-bold flex items-center justify-center text-sm">
+              <div
+                class="w-10 h-10 rounded-full bg-indigo-100 text-indigo-800 font-bold flex items-center justify-center text-sm">
                 SP
               </div>
               <div>
@@ -732,11 +913,13 @@
             <div>
               <div class="text-primary font-serif text-5xl leading-none mb-4">&ldquo;</div>
               <p data-i18n="testimonials.item3Quote" class="text-text-muted text-sm sm:text-base leading-relaxed mb-6">
-                Los torneos de speed coding me permitieron demostrar lo que sé hacer en vivo. Recibí dos ofertas concretas de empresas que estaban viendo el stream en Discord.
+                Los torneos de speed coding me permitieron demostrar lo que sé hacer en vivo. Recibí dos ofertas
+                concretas de empresas que estaban viendo el stream en Discord.
               </p>
             </div>
             <div class="flex items-center gap-3 pt-4 border-t border-border-main">
-              <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center text-sm">
+              <div
+                class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center text-sm">
                 LB
               </div>
               <div>
@@ -754,35 +937,42 @@
       <div class="max-w-7xl mx-auto px-6">
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
-            <span data-i18n="news.badge" class="text-xs font-bold tracking-wider text-text-main uppercase bg-primary/25 px-3 py-1 rounded-full inline-block mb-3">
+            <span data-i18n="news.badge"
+              class="text-xs font-bold tracking-wider text-text-main uppercase bg-primary/25 px-3 py-1 rounded-full inline-block mb-3">
               Artículos y Contenido
             </span>
             <h2 data-i18n="news.title" class="text-3xl sm:text-4xl font-extrabold text-text-main tracking-tight">
               Artículos y Guías para la Comunidad
             </h2>
           </div>
-          <a href="#" class="text-sm font-semibold text-text-main hover:text-primary-hover inline-flex items-center gap-1 mt-4 md:mt-0 focus-visible:ring-2 focus-visible:ring-primary rounded">
+          <a href="#"
+            class="text-sm font-semibold text-text-main hover:text-primary-hover inline-flex items-center gap-1 mt-4 md:mt-0 focus-visible:ring-2 focus-visible:ring-primary rounded">
             <span data-i18n="news.viewAll">Ver todos los artículos &rarr;</span>
           </a>
         </div>
 
         <!-- Scroll Snap Container: flex overflow-x-auto snap-x snap-mandatory on mobile -> grid on md/lg -->
-        <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 no-scrollbar pb-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible md:pb-0">
+        <div
+          class="flex overflow-x-auto snap-x snap-mandatory gap-6 no-scrollbar pb-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible md:pb-0">
           <!-- Article 1 -->
           <article class="w-[85vw] sm:w-[360px] md:w-auto flex-shrink-0 snap-center card flex flex-col justify-between">
             <div>
-              <div class="flex items-center justify-between text-xs text-text-muted mb-4 pb-3 border-b border-border-main">
-                <span data-i18n="news.item1Tag" class="font-semibold text-text-main bg-primary/20 px-2.5 py-0.5 rounded">SYSTEM DESIGN</span>
+              <div
+                class="flex items-center justify-between text-xs text-text-muted mb-4 pb-3 border-b border-border-main">
+                <span data-i18n="news.item1Tag"
+                  class="font-semibold text-text-main bg-primary/20 px-2.5 py-0.5 rounded">SYSTEM DESIGN</span>
                 <span data-i18n="news.item1ReadTime">7 min lectura</span>
               </div>
               <h3 data-i18n="news.item1Title" class="text-lg font-bold text-text-main mb-3 leading-snug">
                 Cómo superar un System Design interview sin morir en el intento
               </h3>
               <p data-i18n="news.item1Desc" class="text-sm text-text-muted leading-relaxed mb-6">
-                Pautas clave para estructurar tu pensamiento arquitectónico, justificar decisiones de diseño y comunicar trade-offs bajo presión.
+                Pautas clave para estructurar tu pensamiento arquitectónico, justificar decisiones de diseño y comunicar
+                trade-offs bajo presión.
               </p>
             </div>
-            <a href="#" class="text-sm font-semibold text-text-main hover:text-primary-hover inline-flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-primary rounded">
+            <a href="#"
+              class="text-sm font-semibold text-text-main hover:text-primary-hover inline-flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-primary rounded">
               <span data-i18n="common.readMore">Leer artículo completo &rarr;</span>
             </a>
           </article>
@@ -790,18 +980,22 @@
           <!-- Article 2 -->
           <article class="w-[85vw] sm:w-[360px] md:w-auto flex-shrink-0 snap-center card flex flex-col justify-between">
             <div>
-              <div class="flex items-center justify-between text-xs text-text-muted mb-4 pb-3 border-b border-border-main">
-                <span data-i18n="news.item2Tag" class="font-semibold text-text-main bg-primary/20 px-2.5 py-0.5 rounded">REMOTE WORK</span>
+              <div
+                class="flex items-center justify-between text-xs text-text-muted mb-4 pb-3 border-b border-border-main">
+                <span data-i18n="news.item2Tag"
+                  class="font-semibold text-text-main bg-primary/20 px-2.5 py-0.5 rounded">REMOTE WORK</span>
                 <span data-i18n="news.item2ReadTime">5 min lectura</span>
               </div>
               <h3 data-i18n="news.item2Title" class="text-lg font-bold text-text-main mb-3 leading-snug">
                 Salarios tech en Latam 2026: qué puestos son los más demandados
               </h3>
               <p data-i18n="news.item2Desc" class="text-sm text-text-muted leading-relaxed mb-6">
-                Análisis exhaustivo de más de 400 contrataciones reales cerradas dentro de la comunidad TechToJob durante el último semestre.
+                Análisis exhaustivo de más de 400 contrataciones reales cerradas dentro de la comunidad TechToJob
+                durante el último semestre.
               </p>
             </div>
-            <a href="#" class="text-sm font-semibold text-text-main hover:text-primary-hover inline-flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-primary rounded">
+            <a href="#"
+              class="text-sm font-semibold text-text-main hover:text-primary-hover inline-flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-primary rounded">
               <span data-i18n="common.readMore">Leer artículo completo &rarr;</span>
             </a>
           </article>
@@ -809,18 +1003,22 @@
           <!-- Article 3 -->
           <article class="w-[85vw] sm:w-[360px] md:w-auto flex-shrink-0 snap-center card flex flex-col justify-between">
             <div>
-              <div class="flex items-center justify-between text-xs text-text-muted mb-4 pb-3 border-b border-border-main">
-                <span data-i18n="news.item3Tag" class="font-semibold text-text-main bg-primary/20 px-2.5 py-0.5 rounded">CONTRATACIÓN</span>
+              <div
+                class="flex items-center justify-between text-xs text-text-muted mb-4 pb-3 border-b border-border-main">
+                <span data-i18n="news.item3Tag"
+                  class="font-semibold text-text-main bg-primary/20 px-2.5 py-0.5 rounded">CONTRATACIÓN</span>
                 <span data-i18n="news.item3ReadTime">4 min lectura</span>
               </div>
               <h3 data-i18n="news.item3Title" class="text-lg font-bold text-text-main mb-3 leading-snug">
                 Por qué los ATS tradicionales están matando la contratación tech
               </h3>
               <p data-i18n="news.item3Desc" class="text-sm text-text-muted leading-relaxed mb-6">
-                Cómo los filtros automáticos de palabras clave descartan a los mejores desarrolladores y por qué la validación comunitaria es el futuro.
+                Cómo los filtros automáticos de palabras clave descartan a los mejores desarrolladores y por qué la
+                validación comunitaria es el futuro.
               </p>
             </div>
-            <a href="#" class="text-sm font-semibold text-text-main hover:text-primary-hover inline-flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-primary rounded">
+            <a href="#"
+              class="text-sm font-semibold text-text-main hover:text-primary-hover inline-flex items-center gap-1 focus-visible:ring-2 focus-visible:ring-primary rounded">
               <span data-i18n="common.readMore">Leer artículo completo &rarr;</span>
             </a>
           </article>
@@ -836,32 +1034,32 @@
     <section class="py-12 lg:py-16">
       <div class="max-w-5xl mx-auto px-6">
         <div class="bg-primary/20 border border-primary/40 rounded-3xl p-8 sm:p-12 lg:p-14 text-center">
-          <div class="w-12 h-12 rounded-2xl bg-white text-text-main flex items-center justify-center mx-auto mb-6 shadow-soft">
+          <div
+            class="w-12 h-12 rounded-2xl bg-white text-text-main flex items-center justify-center mx-auto mb-6 shadow-soft">
             <svg class="w-6 h-6 text-text-main" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
 
-          <h2 data-i18n="newsletter.title" class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-text-main tracking-tight mb-4 max-w-2xl mx-auto">
+          <h2 data-i18n="newsletter.title"
+            class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-text-main tracking-tight mb-4 max-w-2xl mx-auto">
             Recibí un resumen semanal con las búsquedas destacadas y eventos técnicos
           </h2>
           <p data-i18n="newsletter.subtitle" class="text-sm sm:text-base text-text-muted max-w-xl mx-auto mb-8">
-            Sin spam. Solo oportunidades validadas, resúmenes de torneos y artículos técnicos curados directamente en tu bandeja de entrada.
+            Sin spam. Solo oportunidades validadas, resúmenes de torneos y artículos técnicos curados directamente en tu
+            bandeja de entrada.
           </p>
 
-          <form id="newsletter-form" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
-            <label for="newsletter-email" class="sr-only" data-i18n="newsletter.inputAria">Correo electrónico para suscripción</label>
-            <input 
-              id="newsletter-email"
-              name="email"
-              type="email" 
-              autocomplete="email"
-              placeholder="tu-email@ejemplo.com" 
-              data-i18n-placeholder="newsletter.inputPlaceholder"
-              required 
-              class="w-full px-5 py-3 min-h-[48px] rounded-pill border border-border-main text-text-main bg-white text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:border-transparent"
-            >
-            <button type="submit" class="bg-text-main text-white hover:bg-black font-semibold px-6 py-3 min-h-[48px] rounded-pill text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary flex-shrink-0 cursor-pointer">
+          <form id="newsletter-form" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+            onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
+            <label for="newsletter-email" class="sr-only" data-i18n="newsletter.inputAria">Correo electrónico para
+              suscripción</label>
+            <input id="newsletter-email" name="email" type="email" autocomplete="email"
+              placeholder="tu-email@ejemplo.com" data-i18n-placeholder="newsletter.inputPlaceholder" required
+              class="w-full px-5 py-3 min-h-[48px] rounded-pill border border-border-main text-text-main bg-white text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:border-transparent">
+            <button type="submit"
+              class="bg-text-main text-white hover:bg-black font-semibold px-6 py-3 min-h-[48px] rounded-pill text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary flex-shrink-0 cursor-pointer">
               <span data-i18n="newsletter.button">Suscribirme</span>
             </button>
           </form>
@@ -879,7 +1077,9 @@
       <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
         <!-- Logo & Brand Info (Copyright debajo del logo) -->
         <div class="flex flex-col items-center md:items-start gap-2.5 text-center md:text-left max-w-md">
-          <a href="./index.html" class="inline-flex items-center focus-visible:ring-2 focus-visible:ring-primary rounded-lg" aria-label="TechToJob Inicio">
+          <a href="./index.html"
+            class="inline-flex items-center focus-visible:ring-2 focus-visible:ring-primary rounded-lg"
+            aria-label="TechToJob Inicio">
             <img src="/logos/v1-positivo.svg" alt="TechToJob" width="135" height="20" class="h-6 sm:h-7 w-auto">
           </a>
           <p data-i18n="footer.copy" class="text-xs text-text-muted">
@@ -888,15 +1088,26 @@
         </div>
 
         <!-- Legal Links (Una sola fila en desktop) -->
-        <nav class="flex flex-wrap md:flex-nowrap items-center justify-center md:justify-end gap-4 lg:gap-6 text-xs text-text-muted whitespace-nowrap pt-1" aria-label="Enlaces legales y pie de página">
-          <a href="./politicas.html" data-i18n="footer.privacy" class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded py-2 px-1 min-h-[44px] inline-flex items-center">Políticas de Privacidad</a>
-          <a href="./aviso-legal.html" data-i18n="footer.legal" class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded py-2 px-1 min-h-[44px] inline-flex items-center">Aviso Legal</a>
-          <a href="https://discord.gg/rY9hfDeqB" target="_blank" rel="noopener noreferrer" data-i18n="footer.officialDiscord" class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded py-2 px-1 min-h-[44px] inline-flex items-center">Discord Oficial</a>
-          <a href="mailto:contacto@techtojob.com" data-i18n="footer.contact" class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded py-2 px-1 min-h-[44px] inline-flex items-center">Contacto</a>
+        <nav
+          class="flex flex-wrap md:flex-nowrap items-center justify-center md:justify-end gap-4 lg:gap-6 text-xs text-text-muted whitespace-nowrap pt-1"
+          aria-label="Enlaces legales y pie de página">
+          <a href="./politicas.html" data-i18n="footer.privacy"
+            class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded py-2 px-1 min-h-[44px] inline-flex items-center">Políticas
+            de Privacidad</a>
+          <a href="./aviso-legal.html" data-i18n="footer.legal"
+            class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded py-2 px-1 min-h-[44px] inline-flex items-center">Aviso
+            Legal</a>
+          <a href="https://discord.gg/rY9hfDeqB" target="_blank" rel="noopener noreferrer"
+            data-i18n="footer.officialDiscord"
+            class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded py-2 px-1 min-h-[44px] inline-flex items-center">Discord
+            Oficial</a>
+          <a href="mailto:contacto@techtojob.com" data-i18n="footer.contact"
+            class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded py-2 px-1 min-h-[44px] inline-flex items-center">Contacto</a>
         </nav>
       </div>
     </div>
   </footer>
 
 </body>
+
 </html>
