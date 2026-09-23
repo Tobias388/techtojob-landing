@@ -28,27 +28,35 @@
 
   <!-- HEADER -->
   <header class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-border-main transition-all duration-200">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-3">
       <!-- Logo Principal: Mobile (Símbolo + Texto) | Desktop (Logo Horizontal v1Positivo) -->
-      <a href="./index.html" class="flex items-center gap-2.5 font-extrabold text-xl lg:text-2xl tracking-tight text-text-main focus-visible:ring-2 focus-visible:ring-primary rounded-lg" aria-label="TechToJob Inicio">
+      <a href="./index.html" class="flex items-center gap-2.5 font-extrabold text-xl lg:text-2xl tracking-tight text-text-main focus-visible:ring-2 focus-visible:ring-primary rounded-lg flex-shrink-0" aria-label="TechToJob Inicio">
         <img src="/logos/simbolo-degradado.svg" alt="TechToJob" width="34" height="34" class="h-8 w-8 sm:hidden flex-shrink-0">
         <span class="sm:hidden">TechToJob</span>
         <img src="/logos/v1-positivo.svg" alt="TechToJob" width="162" height="24" class="hidden sm:block h-7 lg:h-8 w-auto">
       </a>
 
-      <nav class="flex items-center gap-6 text-sm font-medium text-text-muted">
-        <a href="./index.html" class="hover:text-text-main transition-colors focus-visible:ring-2 focus-visible:ring-primary rounded px-1">&larr; Volver al Inicio</a>
-        <a href="https://discord.gg/rY9hfDeqB" target="_blank" rel="noopener noreferrer" class="btn btn--primary text-sm py-2 px-4">
-          Comunidad Discord
+      <nav class="flex items-center gap-2 sm:gap-4 flex-shrink-0">
+        <a href="./index.html" class="inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold text-text-muted hover:text-text-main bg-bg-alt hover:bg-white border border-border-main hover:border-primary transition-all whitespace-nowrap focus-visible:ring-2 focus-visible:ring-primary">
+          <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          <span>Volver<span class="hidden sm:inline"> al Inicio</span></span>
+        </a>
+        <a href="https://discord.gg/rY9hfDeqB" target="_blank" rel="noopener noreferrer" class="btn btn--primary text-xs sm:text-sm py-1.5 px-3 sm:py-2 sm:px-4 whitespace-nowrap">
+          <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+          </svg>
+          <span><span class="hidden sm:inline">Comunidad </span>Discord</span>
         </a>
       </nav>
     </div>
   </header>
 
   <!-- CONTENT -->
-  <main id="main-content" class="py-section-mob lg:py-section-desk flex-grow">
-    <div class="max-w-4xl mx-auto px-6">
-      <div class="mb-10">
+  <main id="main-content" class="py-8 sm:py-12 lg:py-16 flex-grow">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="mb-8 sm:mb-10">
         <span class="text-xs font-bold tracking-wider text-text-main uppercase bg-primary/25 px-3 py-1 rounded-full inline-block mb-3">
           Privacidad y Datos
         </span>
@@ -58,30 +66,30 @@
         <p class="text-text-muted text-sm">Última actualización: 21 de Septiembre de 2026</p>
       </div>
 
-      <div class="space-y-8 text-text-muted text-base leading-relaxed">
-        <section class="card bg-white">
+      <div class="space-y-6 sm:space-y-8 text-text-muted text-base leading-relaxed">
+        <section class="card bg-white p-5 sm:p-6 lg:p-8">
           <h2 class="text-xl font-bold text-text-main mb-3">1. Compromiso con tu Privacidad</h2>
           <p>
             En <strong>TechToJob</strong> valoramos y respetamos la privacidad de los desarrolladores y reclutadores que forman parte de nuestra comunidad. Esta Política detalla de manera transparente qué datos recopilamos, cómo los protegemos y cuáles son tus derechos.
           </p>
         </section>
 
-        <section class="card bg-white">
+        <section class="card bg-white p-5 sm:p-6 lg:p-8">
           <h2 class="text-xl font-bold text-text-main mb-3">2. Datos que Recopilamos</h2>
           <p>
             TechToJob recopila únicamente la información estrictamente necesaria para brindar una experiencia comunitaria fluida y conectar talento con empresas:
           </p>
-          <ul class="list-disc list-inside mt-3 space-y-2 text-sm">
+          <ul class="list-disc pl-5 mt-3 space-y-2 text-sm">
             <li><strong>Suscripción al boletín semanal:</strong> Dirección de correo electrónico provista de forma voluntaria.</li>
             <li><strong>Participación comunitaria:</strong> Datos públicos asociados a tu perfil de Discord (nombre de usuario, ID público) cuando interactuás en el servidor.</li>
             <li><strong>Perfiles técnicos voluntarios:</strong> Enlaces a repositorios públicos de GitHub, portafolios y preferencias de stack tecnológico que decidís compartir.</li>
           </ul>
         </section>
 
-        <section class="card bg-white">
+        <section class="card bg-white p-5 sm:p-6 lg:p-8">
           <h2 class="text-xl font-bold text-text-main mb-3">3. Finalidad del Tratamiento de Datos</h2>
           <p>Los datos son utilizados exclusivamente para:</p>
-          <ul class="list-disc list-inside mt-3 space-y-1 text-sm">
+          <ul class="list-disc pl-5 mt-3 space-y-2 text-sm">
             <li>Envío del resumen semanal de búsquedas laborales y torneos de código.</li>
             <li>Gestión de acceso, roles y verificación técnica en Discord.</li>
             <li>Mejora de la calidad y relevancia de los contenidos de la comunidad.</li>
@@ -89,14 +97,14 @@
           </ul>
         </section>
 
-        <section class="card bg-white">
+        <section class="card bg-white p-5 sm:p-6 lg:p-8">
           <h2 class="text-xl font-bold text-text-main mb-3">4. Política de Cookies y Almacenamiento Local</h2>
           <p>
             Nuestro sitio web utiliza únicamente cookies técnicas y analíticas esenciales orientadas al rendimiento y la navegación sin registrar información personal sensible. No empleamos rastreadores de publicidad invasivos.
           </p>
         </section>
 
-        <section class="card bg-white">
+        <section class="card bg-white p-5 sm:p-6 lg:p-8">
           <h2 class="text-xl font-bold text-text-main mb-3">5. Ejercicio de Tus Derechos (ARCO / GDPR)</h2>
           <p>
             Tenés derecho en cualquier momento a solicitar el acceso, rectificación, supresión o limitación del tratamiento de tus datos personales, así como a darte de baja del newsletter mediante el enlace incluido al pie de cada correo o escribiendo a <strong>privacidad@techtojob.com</strong>.
